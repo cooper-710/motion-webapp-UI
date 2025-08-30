@@ -42,7 +42,7 @@ export default function FBXModel({
 
         if (needsFallback) {
           obj.material = new THREE.MeshStandardMaterial({
-            color: new THREE.Color("#c8ccd4"),
+            color: new THREE.Color("#EADCCF"),
             roughness: 0.9,
             metalness: 0.05,
           });

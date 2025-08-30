@@ -1,49 +1,22 @@
 html,body,#root{height:100%}
-body{margin:0;background:var(--bg);color:var(--text);font-family:var(--font-ui)}
-button,input,select{font:inherit}
-.card{background:var(--bg-elev);border:1px solid var(--line);border-radius:16px;box-shadow:0 8px 24px rgba(0,0,0,.35)}
-.topbar{display:flex;align-items:center;gap:16px;padding:16px;position:sticky;top:10px;margin:10px;backdrop-filter:saturate(120%) blur(8px)}
-.topbar .brand{font-weight:800;letter-spacing:.5px;font-size:22px;margin-right:16px}
-.ctrl{background:var(--bg);color:var(--text);border:1px solid var(--line);border-radius:10px;padding:10px 12px}
+body{margin:0;font-family:Inter,ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,"Helvetica Neue",Arial}
+.card{border-radius:16px;border:1px solid var(--line)}
+.topbar{display:flex;align-items:center;gap:16px;padding:16px;position:sticky;top:10px;margin:10px;border-radius:16px}
+.ctrl{border:1px solid var(--line);border-radius:10px;padding:10px 12px}
 .btn{background:var(--brand);color:#111;border:none;padding:10px 14px;border-radius:12px;font-weight:700}
-.btn.ghost{background:transparent;color:var(--text);border:1px solid var(--line)}
 .stage{margin:12px;border-radius:16px;overflow:hidden}
-.stage-inner{background:var(--panel);border:1px solid var(--line);height:70vh;position:relative}
-.stage-inner::after{content:"";position:absolute;inset:0;pointer-events:none;background:radial-gradient(60% 50% at 50% 55%, rgba(0,0,0,.22), transparent 70%)}
-.chart{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:16px}
+.stage-inner{height:70vh;border:1px solid var(--line)}
+.chart{border:1px solid var(--line);border-radius:16px;padding:16px}
 .charts{display:grid;gap:16px;grid-template-columns:1fr;margin:12px}
 @media (min-width:1100px){.charts{grid-template-columns:1fr 1fr}}
 .chart .title{font-size:16px;color:var(--muted);margin-bottom:8px}
 
-@media (min-width:1200px){ .stage-inner{ height:72vh; } }
-@media (max-width:1199px) and (min-width:900px){ .stage-inner{ height:62vh; } }
-@media (max-width:899px){ .stage-inner{ height:52vh; } }
-
-[data-theme="light"] body{ background:var(--bg); color:var(--text); }
-[data-theme="light"] .card{ background:var(--bg-elev); border-color:var(--line); }
-[data-theme="light"] .topbar{ background:var(--bg-elev); }
-[data-theme="light"] .ctrl{ background:#fff; color:var(--text); border-color:var(--line); }
-[data-theme="light"] .stage-inner{ background:var(--panel); }
-[data-theme="light"] .stage-inner::after{ background: radial-gradient(60% 50% at 50% 55%, rgba(0,0,0,.06), transparent 70%); }
-[data-theme="light"] .chart{ background:var(--surface); border-color:var(--line); }
-[data-theme="light"] .charts .chart{ background:var(--surface); }
-[data-theme="light"] .chart .title{ color:var(--muted); }
-
-/* hard override for any lingering dark panels/grids */
-[data-theme="light"] [class*="graph"], 
-[data-theme="light"] [class*="Graph"], 
-[data-theme="light"] [class*="panel"],
-[data-theme="light"] canvas{ background-color:transparent !important; }
-[data-theme="light"] .grid line{ stroke:var(--line) !important; }
-[data-theme="light"] .axis text{ fill:var(--muted) !important; }
-
-[data-theme="light"] body{background:var(--bg);color:var(--text)}
-[data-theme="light"] .card{background:var(--bg-elev);border-color:var(--line)}
-[data-theme="light"] .topbar{background:var(--bg-elev)}
-[data-theme="light"] .ctrl{background:#fff;color:var(--text);border-color:var(--line)}
-[data-theme="light"] .stage-inner{background:var(--panel)}
-[data-theme="light"] .stage-inner::after{background:radial-gradient(60% 50% at 50% 55%, rgba(0,0,0,.06), transparent 70%)}
-[data-theme="light"] .chart{background:var(--surface);border-color:var(--line)}
-[data-theme="light"] .chart .title{color:var(--muted)}
-[data-theme="light"] .grid line{stroke:var(--line)!important}
-[data-theme="light"] .axis text{fill:var(--muted)!important}
+[data-theme="light"] body{background:#eef6fb;color:var(--text)}
+[data-theme="light"] .card{background:#ffffff;border-color:var(--line);box-shadow:none}
+[data-theme="light"] .topbar{background:#ffffff}
+[data-theme="light"] .ctrl{background:#ffffff;color:var(--text)}
+[data-theme="light"] .stage-inner{background:#f4f1ea}
+[data-theme="light"] .stage-inner::after{content:"";position:absolute;inset:0;pointer-events:none;background:radial-gradient(60% 50% at 50% 55%, rgba(0,0,0,.06), transparent 70%)}
+[data-theme="light"] .chart{background:#ffffff}
+[data-theme="light"] .grid line{stroke:var(--line) !important}
+[data-theme="light"] .axis text{fill:var(--muted) !important}

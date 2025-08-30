@@ -1,0 +1,3 @@
+.light-charts .uplot, .light-charts canvas, .light-charts svg { background: #ffffff !important; }
+.light-charts .u-over, .light-charts .u-grid line { stroke: rgba(12,17,23,0.10) !important; }
+.light-charts .u-axis text { fill: #667085 !important; }
