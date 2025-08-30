@@ -13,3 +13,4 @@ button,input,select{font:inherit}
 .chart{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:16px}
 .charts{display:grid;gap:16px;grid-template-columns:1fr;margin:12px}
 @media (min-width:1100px){.charts{grid-template-columns:1fr 1fr}}
+.chart .title{font-size:16px;color:var(--muted);margin-bottom:8px}
