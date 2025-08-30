@@ -12,3 +12,5 @@ createRoot(document.getElementById('root')!).render(
 )
 
 import "./light-charts.css";
+
+import "./styles/light-overrides.css";

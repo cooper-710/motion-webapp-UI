@@ -51,7 +51,7 @@ export default function GraphHoloPanel({
   // A plane parallel to the ground we use for ray–plane intersection while dragging
   const plane = useMemo(() => new THREE.Plane(new THREE.Vector3(0, 1, 0), 0), []);
 
-  const panelBaseColor = "#0b0f12";
+  const panelBaseColor = "#EBDCCF";
 
   function onDown(e: ThreeEvent<PointerEvent>) {
     if (!draggable) return;
@@ -129,7 +129,7 @@ export default function GraphHoloPanel({
                 style={{
                   fontSize: 14,
                   letterSpacing: "0.02em",
-                  color: "#cfd6e2",
+                  color: "#EBDCCF",
                   marginBottom: 6,
                 }}
               >

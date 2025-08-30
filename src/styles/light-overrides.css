@@ -1,0 +1,62 @@
+/* global light */
+:root { --brand:#ff8a00; }
+[data-theme="light"]{
+  --bg:#eef6fb;
+  --bg-elev:#ffffff;
+  --panel:#f4efe6;      /* tan deck */
+  --surface:#ffffff;
+  --text:#0b1220;
+  --muted:#667085;
+  --line:rgba(12,17,23,0.10);
+}
+
+/* app surface */
+[data-theme="light"] body{ background:var(--bg); color:var(--text); }
+[data-theme="light"] .card{ background:#fff; border:1px solid var(--line); box-shadow:none; }
+[data-theme="light"] .topbar{ background:#fff; }
+
+/* controls */
+[data-theme="light"] .ctrl{ background:#fff; color:var(--text); border-color:var(--line); }
+[data-theme="light"] .btn{ background:var(--brand); color:#111; }
+
+/* 3D stage (white mode) */
+.stage{ margin:12px; border-radius:16px; overflow:hidden; }
+[data-theme="light"] .stage-inner{ background:var(--panel) !important; border:1px solid var(--line); height:70vh; position:relative; }
+[data-theme="light"] .stage-inner::after{
+  content:""; position:absolute; inset:0; pointer-events:none;
+  background:radial-gradient(60% 50% at 50% 55%, rgba(0,0,0,.05), transparent 70%);
+}
+
+/* CHARTS — force white panels + light grid/axes */
+[data-theme="light"] .chart{ background:#fff !important; border:1px solid var(--line) !important; border-radius:16px; }
+[data-theme="light"] .chart .title{ color:var(--muted); }
+[data-theme="light"] .charts{ display:grid; gap:16px; grid-template-columns:1fr; margin:12px; }
+@media (min-width:1100px){ [data-theme="light"] .charts{ grid-template-columns:1fr 1fr; } }
+
+/* uPlot (or similar) overrides */
+[data-theme="light"] .uplot, 
+[data-theme="light"] .uplot canvas,
+[data-theme="light"] .u-over,
+[data-theme="light"] .uwrap { background:#fff !important; }
+[data-theme="light"] .u-grid line{ stroke:var(--line) !important; }
+[data-theme="light"] .u-axis text{ fill:var(--muted) !important; }
+[data-theme="light"] .u-legend{ color:var(--text) !important; }
+[data-theme="light"] .u-series, 
+[data-theme="light"] path[stroke*="#ff"], 
+[data-theme="light"] path.series { stroke:var(--brand) !important; }
+
+/* fallbacks for any dark leftovers */
+[data-theme="light"] [class*="graph"],
+[data-theme="light"] [class*="Panel"],
+[data-theme="light"] [class*="panel"]{
+  background:#fff !important; border-color:var(--line) !important;
+}
+[data-theme="light"] canvas{ background:transparent !important; }
+
+/* kill dark diagonal mask overlays if present */
+[data-theme="light"] .overlay, 
+[data-theme="light"] .mask, 
+[data-theme="light"] [class*="shade"]{
+  background-image:none !important; background:transparent !important;
+  box-shadow:none !important;
+}
