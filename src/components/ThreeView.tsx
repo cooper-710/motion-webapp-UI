@@ -69,7 +69,7 @@ function TrainingFloor() {
       {/* Matte base plane */}
       <mesh rotation={[-Math.PI / 2, 0, 0]} position={[0, -0.001, 0]}>
         <planeGeometry args={[FLOOR_W, FLOOR_D]} />
-        <meshStandardMaterial color="#0b0e12" roughness={1} metalness={0} />
+        <meshStandardMaterial color="#EADCCF" roughness={1} metalness={0} />
       </mesh>
 
       {/* Localized grid INSIDE the boundary */}
@@ -92,7 +92,7 @@ function TrainingFloor() {
       {/* Orange perimeter */}
       <Line
         points={boundaryPoints as unknown as [number, number, number][]}
-        color="#E5812B"
+        color="#EADCCF"
         lineWidth={1.4}
         transparent
         opacity={0.95}
@@ -102,7 +102,7 @@ function TrainingFloor() {
       {/* Soft inner glow around edges */}
       <mesh rotation={[-Math.PI / 2, 0, 0]} position={[0, 0.0002, 0]}>
         <planeGeometry args={[FLOOR_W * 0.985, FLOOR_D * 0.985]} />
-        <meshBasicMaterial transparent opacity={0.18} color="#E5812B" />
+        <meshBasicMaterial transparent opacity={0.18} color="#EADCCF" />
       </mesh>
 
       {/* Tight contact shadows */}
@@ -135,9 +135,9 @@ function Scene({
   const axes = useMemo(() => new THREE.AxesHelper(1.5), []);
   return (
     <>
-      <hemisphereLight intensity={0.7} groundColor="#0d0f13" />
+      <hemisphereLight intensity={0.7} groundColor="#EADCCF" />
       <ambientLight intensity={0.25} />
-      <directionalLight position={[6, 10, 6]} intensity={1.05} color="#ffd1a3" />
+      <directionalLight position={[6, 10, 6]} intensity={1.05} color="#EADCCF" />
 
       <TrainingFloor />
       <primitive object={axes} position={[0, 0.01, 0]} />

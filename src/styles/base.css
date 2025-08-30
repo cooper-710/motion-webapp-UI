@@ -36,3 +36,14 @@ button,input,select{font:inherit}
 [data-theme="light"] canvas{ background-color:transparent !important; }
 [data-theme="light"] .grid line{ stroke:var(--line) !important; }
 [data-theme="light"] .axis text{ fill:var(--muted) !important; }
+
+[data-theme="light"] body{background:var(--bg);color:var(--text)}
+[data-theme="light"] .card{background:var(--bg-elev);border-color:var(--line)}
+[data-theme="light"] .topbar{background:var(--bg-elev)}
+[data-theme="light"] .ctrl{background:#fff;color:var(--text);border-color:var(--line)}
+[data-theme="light"] .stage-inner{background:var(--panel)}
+[data-theme="light"] .stage-inner::after{background:radial-gradient(60% 50% at 50% 55%, rgba(0,0,0,.06), transparent 70%)}
+[data-theme="light"] .chart{background:var(--surface);border-color:var(--line)}
+[data-theme="light"] .chart .title{color:var(--muted)}
+[data-theme="light"] .grid line{stroke:var(--line)!important}
+[data-theme="light"] .axis text{fill:var(--muted)!important}
