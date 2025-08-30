@@ -1,0 +1,47 @@
+[data-theme="light"] {
+  --text: #000000;
+  --muted: #000000;
+  --label: #000000;
+}
+
+body,
+h1,h2,h3,h4,h5,h6,
+p,span,strong,b,
+label,input,select,button {
+  color: var(--text) !important;
+}
+
+.topbar * {
+  color: var(--text) !important;
+}
+
+.ctrl,
+input,
+select,
+option,
+button,
+.dropdown,
+.card * {
+  color: var(--text) !important;
+}
+
+.chart,
+.chart * {
+  color: var(--text) !important;
+}
+
+.uplot .u-axis text,
+.recharts-cartesian-axis-tick-value,
+.recharts-tooltip-wrapper,
+.recharts-legend-item-text {
+  fill: var(--text) !important;
+  color: var(--text) !important;
+}
+
+button,
+.btn,
+.reset,
+.play {
+  color: #fff !important;
+  background-color: #ff8a00 !important;
+}

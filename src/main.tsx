@@ -16,3 +16,5 @@ import "./light-charts.css";
 import "./styles/light-overrides.css";
 
 import "./styles/final-light.css";
+
+import "./styles/final-light-text.css";
