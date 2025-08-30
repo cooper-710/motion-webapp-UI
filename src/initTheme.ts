@@ -1,3 +1,5 @@
 if(typeof document!=="undefined"){
-  document.documentElement.dataset.theme=localStorage.getItem("theme")==="light"?"light":"";
+  const saved = localStorage.getItem("theme");
+  const next = saved ? saved : "light";
+  document.documentElement.dataset.theme = next === "light" ? "light" : "";
 }
