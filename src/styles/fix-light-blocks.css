@@ -1,0 +1,26 @@
+/* Make all input blocks white */
+html[data-theme="light"] input,
+html[data-theme="light"] select,
+html[data-theme="light"] .ctrl,
+html[data-theme="light"] .player-input,
+html[data-theme="light"] .ant-input,
+html[data-theme="light"] .input-block {
+  background-color: #fff !important;
+  color: #000 !important;
+  border: 1px solid #ddd !important;
+}
+
+/* Lighten graph container backgrounds */
+html[data-theme="light"] .graph-container,
+html[data-theme="light"] .graphs,
+html[data-theme="light"] .chart-wrapper,
+html[data-theme="light"] .recharts-wrapper {
+  background-color: #f7f7f7 !important;
+}
+
+/* Remove any unwanted box shadows */
+html[data-theme="light"] .ctrl,
+html[data-theme="light"] .card,
+html[data-theme="light"] .graph-container {
+  box-shadow: none !important;
+}
