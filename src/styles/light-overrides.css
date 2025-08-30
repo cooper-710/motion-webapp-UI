@@ -60,3 +60,42 @@
   background-image:none !important; background:transparent !important;
   box-shadow:none !important;
 }
+[data-theme="light"] .app,
+[data-theme="light"] .content,
+[data-theme="light"] .main,
+[data-theme="light"] .charts-section,
+[data-theme="light"] .secondary { background: transparent !important; }
+
+[data-theme="light"] .stage{ background: transparent !important; border: none !important; }
+[data-theme="light"] .stage-inner{ background:#f4efe6 !important; border:1px solid rgba(12,17,23,0.10) !important; }
+[data-theme="light"] .stage-inner::after{ background:radial-gradient(60% 50% at 50% 55%, rgba(0,0,0,.05), transparent 70%) !important; }
+
+[data-theme="light"] .topbar,
+[data-theme="light"] header,
+[data-theme="light"] .toolbar{ background:#fff !important; box-shadow:none !important; border:1px solid rgba(12,17,23,0.10) }
+
+[data-theme="light"] .chart,
+[data-theme="light"] [class*="Chart"],
+[data-theme="light"] [class*="chart-panel"],
+[data-theme="light"] [role="figure"]{
+  background:#fff !important;
+  border:1px solid rgba(12,17,23,0.10) !important;
+  border-radius:16px !important;
+  box-shadow:none !important;
+}
+
+[data-theme="light"] .uplot, 
+[data-theme="light"] .uplot canvas,
+[data-theme="light"] .uwrap { background:#fff !important; }
+[data-theme="light"] .u-grid line{ stroke:rgba(12,17,23,0.10) !important; }
+[data-theme="light"] .u-axis text{ fill:#667085 !important; }
+
+[data-theme="light"] canvas{ background:transparent !important; }
+
+[data-theme="light"] .overlay,
+[data-theme="light"] .mask,
+[data-theme="light"] [class*="shade"],
+[data-theme="light"] [class*="vignette"]{
+  background:none !important;
+  box-shadow:none !important;
+}
