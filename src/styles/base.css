@@ -14,3 +14,7 @@ button,input,select{font:inherit}
 .charts{display:grid;gap:16px;grid-template-columns:1fr;margin:12px}
 @media (min-width:1100px){.charts{grid-template-columns:1fr 1fr}}
 .chart .title{font-size:16px;color:var(--muted);margin-bottom:8px}
+
+@media (min-width:1200px){ .stage-inner{ height:72vh; } }
+@media (max-width:1199px) and (min-width:900px){ .stage-inner{ height:62vh; } }
+@media (max-width:899px){ .stage-inner{ height:52vh; } }
