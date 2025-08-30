@@ -26,5 +26,7 @@
     <div id="root"></div>
     <!-- Relative module path; Vite rewrites this on build -->
     <script type="module" src="src/main.tsx"></script>
-  </body>
+  <button id="theme-fab" style="position:fixed;right:14px;bottom:14px;z-index:9999;padding:10px 12px;border-radius:12px;border:1px solid rgba(0,0,0,.08);box-shadow:0 8px 24px rgba(0,0,0,.25);background:#fff;cursor:pointer">☀︎/☾</button>
+<script>document.getElementById("theme-fab").onclick=function(){var r=document.documentElement;var next=r.dataset.theme==="light"?"":"light";r.dataset.theme=next;localStorage.setItem("theme",next||"dark");};</script>
+</body>
 </html>
