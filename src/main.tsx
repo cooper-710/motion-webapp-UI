@@ -22,3 +22,5 @@ import "./styles/final-light-text.css";
 import "./styles/text-black.css";
 
 import "./styles/fix-light-blocks.css";
+
+import "./styles/force-light-2.css";

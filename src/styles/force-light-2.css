@@ -1,0 +1,55 @@
+html[data-theme="light"] .ctrl,
+html[data-theme="light"] .ctrl *,
+html[data-theme="light"] .input,
+html[data-theme="light"] input,
+html[data-theme="light"] select,
+html[data-theme="light"] .input-block,
+html[data-theme="light"] .player-input,
+html[data-theme="light"] .segmented,
+html[data-theme="light"] .segmented * {
+  background:#fff !important;
+  color:#000 !important;
+  border-color:#ddd !important;
+}
+
+html[data-theme="light"] button[aria-pressed="true"],
+html[data-theme="light"] .active,
+html[data-theme="light"] .selected {
+  background:#fff !important;
+  color:#000 !important;
+  border-color:#ddd !important;
+  box-shadow:none !important;
+}
+
+html[data-theme="light"] .btn-primary,
+html[data-theme="light"] .play,
+html[data-theme="light"] .reset,
+html[data-theme="light"] button[data-variant="primary"]{
+  background:#ff8a00 !important;
+  color:#111 !important;
+  border:none !important;
+}
+
+html[data-theme="light"] .charts,
+html[data-theme="light"] .charts *[class*="container"],
+html[data-theme="light"] .charts-wrapper,
+html[data-theme="light"] .graphs,
+html[data-theme="light"] .graph-container {
+  background:#f7f7f7 !important;
+  box-shadow:none !important;
+}
+
+html[data-theme="light"] .chart,
+html[data-theme="light"] [class*="chart-panel"],
+html[data-theme="light"] [role="figure"],
+html[data-theme="light"] .recharts-wrapper,
+html[data-theme="light"] .uplot,
+html[data-theme="light"] .uwrap {
+  background:#fff !important;
+  border:1px solid rgba(12,17,23,0.10) !important;
+  border-radius:16px !important;
+}
+
+html[data-theme="light"] .recharts-cartesian-grid-horizontal line,
+html[data-theme="light"] .recharts-cartesian-grid-vertical line,
+html[data-theme="light"] .u-grid line { stroke:rgba(12,17,23,0.10) !important; }
